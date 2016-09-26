@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/singleTrip_pic"
+        android:src="@drawable/ic_guest"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <ImageView
+        android:id="@+id/singleTrip_icon_created"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_create"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignTop="@+id/singleTrip_pic"
+        android:layout_toEndOf="@id/singleTrip_pic"
+        android:layout_toRightOf="@id/singleTrip_pic"/>
+
+    <TextView
+        android:id="@+id/singleTrip_created"
+        android:text="1 AUG"
+        android:textColor="#5e5e5e"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_alignTop="@id/singleTrip_icon_created"
+        android:layout_toRightOf="@id/singleTrip_icon_created"/>
+
+    <TextView
+        android:id="@+id/singleTrip_user"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:text="Gamaliel Surya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/singleTrip_icon_created"
+        android:layout_alignLeft="@+id/singleTrip_icon_created"
+        android:layout_alignStart="@+id/singleTrip_icon_created"
+         />
+
+    <TextView
+        android:id="@+id/singleTrip_follower"
+        android:text="20"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#D93B00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/singleTrip_created"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:src="@drawable/ic_follower"
+        android:layout_toLeftOf="@id/singleTrip_follower"
+        android:layout_alignTop="@id/singleTrip_follower"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
